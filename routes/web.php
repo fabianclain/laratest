@@ -15,9 +15,6 @@ use App\Models\Listing;
 |
 */
 
-Route::get('/', [ListingController::class, 'index']);
-Route::get('/listings/{listing}', [ListingController::class, 'show']);
-
 //index
 //show
 //create - sjpw form to create new listing
@@ -25,5 +22,9 @@ Route::get('/listings/{listing}', [ListingController::class, 'show']);
 //edit - show form to edit listin 
 //update
 //destroy
+
+Route::get('/', [ListingController::class, 'index']);
+Route::get('/listings/{listing}', [ListingController::class, 'show']);
+
 
 
