@@ -4,9 +4,11 @@
     "description": "The Laravel Framework.",
     "keywords": ["framework", "laravel"],
     "license": "MIT",
+    "repositories": { "packagist.org": { "type": "composer", "url": "repo.packagist.org" } },
     "require": {
         "php": "^8.0.2",
         "guzzlehttp/guzzle": "^7.2",
+        "itsgoingd/clockwork": "^5.1",
         "laravel/framework": "^9.5.2",
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7"
@@ -58,7 +60,9 @@
         "sort-packages": true,
         "allow-plugins": {
             "pestphp/pest-plugin": true
-        }
+        },
+        "secure-http": false,
+        "disable-tls": true
     },
     "minimum-stability": "stable",
     "prefer-stable": true
